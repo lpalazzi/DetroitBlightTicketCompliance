@@ -5,6 +5,13 @@ def blight_model():
     
     # Load data from the csv files
 
+    train = pd.read_csv("train.csv", encoding="ISO-8859-1", )
+    #test = pd.read_csv("test.csv", encoding="ISO-8859-1")
+
+    cols = train.columns
+    types = train.dtypes
+    print (types)
+
     # Data preprocessing
     # --filter out Null values in compliance column
     # --separate into X_train, y_train, and X_test
